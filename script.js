@@ -72,3 +72,25 @@ function calcularpot() {
     
     `;
 }
+
+//exercicio 3 receba 4 numeros do usuario e devolva para ele o maior e o menor
+function minmax() {
+
+    var numb1 = parseFloat(document.getElementById("number1").value);
+    var numb2= parseFloat(document.getElementById("number2").value);
+    var numb3 = parseFloat(document.getElementById("number3").value);
+    var numb4 = parseFloat(document.getElementById("number4").value);
+    var min = (Math.min(numb1,numb2,numb3,numb4));  
+    var max = (Math.max(numb1,numb2,numb3,numb4));  
+
+   
+    document.getElementById("resultadoss").innerHTML = `
+        min ${min}
+        max ${max}
+    `;
+}
+//exercicio 4 faça uma funçao que gere um numero aleatorio entre 1 e 100
+function numale() {
+var numero = Math.floor(Math.random() * 100) + 1;
+document.getElementById('numberale').textContent = ` ${numero}`;
+        }
